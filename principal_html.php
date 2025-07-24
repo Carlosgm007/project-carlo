@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <H1>Organización sin fines de lucro</H1>
+   <H1><b>Organización sin fines de lucro</b></H1>
     
 <form action="" method="post">
 
