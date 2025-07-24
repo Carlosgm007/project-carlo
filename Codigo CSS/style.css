@@ -1,0 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color:   #636170  ;
+  color: #F2F3F3 ;
+}
+h1{
+   font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+th,td{
+    border: 3px solid  #F2F3F3 ;
+    border-collapse: collapse;  
+}
+table{
+    width: 40%;
+    text-align:left;
+    border: 3px solid  #F2F3F3 ;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#enviardona{
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#produc {
+font-size: x-large;
+
+align-items: center;
+}
+#carr{
+font-size: x-large;
+
+}
+
+#notification-container {
+position: fixed;
+top: 80px; /* Debajo del header */
+right: 20px;
+width: 300px;
+z-index: 1000;
+}
+.notification {
+background-color: #4CAF50; /* Color de fondo para notificaciones de éxito */
+color: white;
+padding: 15px;
+margin-bottom: 10px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.notification.show {
+opacity: 1;
+}
+.notification.achievement {
+background-color: #2196F3; /* Azul para logros */
+}
+.notification.campaign {
+background-color: #ff9800; /* Naranja para campañas */
+}
+.notification.update {
+background-color: #f44336; /* Rojo para actualizaciones (ej. progreso donaciones) */
+}
+.notification .close-btn {
+color: white;
+font-weight: bold;
+cursor: pointer;
+font-size: 20px;
+line-height: 20px;
+}
+.notification .close-btn:hover {
+color: lightgray;
+}
