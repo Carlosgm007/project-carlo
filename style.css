@@ -1,97 +1,122 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
   padding: 20px;
   text-align: center;
-  background-color:   #7764e2  ;
-  color: #F2F3F3 ;
+  background-color: #5c4fcf; /* tono más suave */
+  color: #F2F3F3;
+  line-height: 1.6;
 }
-h1{
-  font-family: 'Arial', sans-serif;
+
+/* Títulos */
+h1 {
   padding: 20px;
+  font-size: 2.2em;
+  font-weight: bold;
   text-align: center;
 }
 
-th,td{
-    border: 3px solid  #3b1d93 ;
-    border-collapse: collapse;  
-}
-table{
-    width: 40%;
-    text-align:left;
-    border: 3px solid  #3b1d93 ;
-    border-collapse: collapse;
-    margin: auto;
+/* Tablas */
+table {
+  width: 60%;
+  margin: 20px auto;
+  border: 3px solid #3b1d93;
+  border-collapse: collapse;
+  background-color: #fff;
+  color: #000;
 }
 
-button {
-  margin-top: 10px;
-  padding: 8px 15px;
+th, td {
+  border: 2px solid #3b1d93;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Botones generales */
+button,
+#enviardona {
+  margin-top: 15px;
+  padding: 10px 18px;
   background-color: #007bff;
   color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
-#enviardona{
-  margin-top: 10px;
-  padding: 8px 15px;
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+button:hover,
+#enviardona:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
-#produc {
-font-size: x-large;
-
-align-items: center;
+/* Texto destacado */
+#produc, #carr {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#carr{
-font-size: x-large;
 
-}
-
+/* Contenedor de notificaciones */
 #notification-container {
-position: fixed;
-top: 80px; /* Debajo del header */
-right: 20px;
-width: 300px;
-z-index: 1000;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  z-index: 1000;
 }
+
+/* Notificación base */
 .notification {
-background-color: #4CAF50; /* Color de fondo para notificaciones de éxito */
-color: white;
-padding: 15px;
-margin-bottom: 10px;
-border-radius: 5px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-opacity: 0;
-transition: opacity 0.5s ease-in-out;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* Mostrar notificación */
 .notification.show {
-opacity: 1;
+  opacity: 1;
 }
+
+/* Tipos de notificaciones */
 .notification.achievement {
-background-color: #2196F3; /* Azul para logros */
+  background-color: #2196F3;
 }
 .notification.campaign {
-background-color: #ff9800; /* Naranja para campañas */
+  background-color: #ff9800;
 }
 .notification.update {
-background-color: #f44336; /* Rojo para actualizaciones (ej. progreso donaciones) */
+  background-color: #f44336;
 }
+
+/* Botón cerrar notificación */
 .notification .close-btn {
-color: white;
-font-weight: bold;
-cursor: pointer;
-font-size: 20px;
-line-height: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
 }
 .notification .close-btn:hover {
-color: lightgray;
+  color: lightgray;
 }
