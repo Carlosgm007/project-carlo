@@ -2,7 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   padding: 20px;
   text-align: center;
-  background-color:   #7764e2  ;
+  background-color:   #db595f  ;
   color: #F2F3F3 ;
 }
 h1{
@@ -12,7 +12,7 @@ h1{
 }
 
 th,td{
-    border: 3px solid  #3b1d93 ;
+    border: 3px solid  #a19daa ;
     border-collapse: collapse;  
 }
 table{
